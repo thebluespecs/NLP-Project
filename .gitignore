@@ -4,3 +4,7 @@ models/
 checkpoint
 samples
 .ipynb_checkpoints
+Dockerfile.cpu
+Doclerfile.gpu
+train-horovod.py
+src/interactive_conditional_samples.py
