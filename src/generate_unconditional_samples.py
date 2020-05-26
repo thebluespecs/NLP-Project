@@ -72,6 +72,8 @@ def sample_model(
                 text = enc.decode(out[i])
                 print("=" * 40 + " SAMPLE " + str(generated) + " " + "=" * 40)
                 print(text)
+                with open("Output.txt", "w") as text_file:
+                    print(f"Output: {text}", file=text_file)
 
 if __name__ == '__main__':
     fire.Fire(sample_model)
