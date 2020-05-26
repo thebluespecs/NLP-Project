@@ -16,7 +16,7 @@ UTF = subprocess.run(["export", "PYTHONIOENCODING=UTF-8"])
 print("The exit code was: %d" % UTF.returncode)
 
 # Finetuning the model
-Training = subprocess.run(["PYTHONPATH=src", "./train.py", "--dataset", "./data/ASOIAF.txt", "--model_name", "'345M'"])
+Training = subprocess.run(["PYTHONPATH=src", "./train.py", "--dataset", "./data/ASOIAF.txt", "--model_name", "345M"])
 print("The exit code was: %d" % Training.returncode)
 
 # Testing
